@@ -1,0 +1,7 @@
+mysqlPassword: "U3VwZXJTZWNyZXRQYXNzd29yZA==" #SuperSecretPassword
+
+image:
+  frontend: registry.humanitec.io/public/bank-demo-frontend:latest
+  moneyapi: registry.humanitec.io/public/bank-demo-money-api:latest
+  usersapi: registry.humanitec.io/public/bank-demo-users-api:latest
+  pullPolicy: Always
