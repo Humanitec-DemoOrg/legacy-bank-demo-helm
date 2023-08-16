@@ -23,9 +23,9 @@ spec:
           protocol: TCP
         env:
         - name: DB_HOST
-          value: mysql
+          value: {{ .Values.mysqlHost }}
         - name: DB_PORT
-          value: "3306"
+          value: {{ .Values.mysqlPort }}
         - name: DB_PASSWORD
           valueFrom:
             secretKeyRef:
@@ -37,7 +37,7 @@ spec:
               name: mysql-credentials
               key: user
         - name: DB_DATABASE
-          value: application
+          value: {{ .Values.mysqlDatabaseName }}
         resources:
           requests:
             memory: "100Mi"

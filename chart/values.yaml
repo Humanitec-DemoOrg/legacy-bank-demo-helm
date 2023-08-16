@@ -1,4 +1,8 @@
+mysqlHost: "mydatabase.example.com"
+mysqlPort: 3306
+mysqlUsername: "root"
 mysqlPassword: "U3VwZXJTZWNyZXRQYXNzd29yZA==" #SuperSecretPassword
+mysqlDatabaseName: "bank"
 
 image:
   frontend: registry.humanitec.io/public/bank-demo-frontend:latest
